@@ -1,16 +1,15 @@
-#Run this project
+# GSG InfoSystem
 
-##create virtual environment
-```python3 -m venv env
+A Django-based web project.
 
-##run 
-```pip install -r requirements.txt
+---
 
-##run
-```python3 manage.py migrate
+## 🚀 Setup Instructions
 
-##run 
-```python3 manage.py makemigrations
+Follow these steps to set up and run the project locally:
 
-##run
-```python3 manage.py runserver
+### 1. Clone the Repository
+
+```bash
+git clone git@github.com:07himanshu20/GSG-InfoSystem-.git
+cd GSG-InfoSystem-

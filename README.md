@@ -1,22 +1,26 @@
- # GSG InfoSystem
 
-A Django-based web project.
+# GSG-InfoSystem
+
+A Django-web based Project
 
 ---
+### Setup Instructions
 
-## 🚀 Setup Instructions
+### 1. clone the repo 
+```bash 
+git clone https://github.com/07himanshu20/GSG-InfoSystem-.git
+cd GSG-InfoSystem- 
+```
 
-Follow these steps to set up and run the project locally:
-
-### 1. Clone the Repository
-
-```bash
-git clone git@github.com:07himanshu20/GSG-InfoSystem-.git
-cd GSG-InfoSystem-
-
-
-**** 2. Create a virtual environment
-
+### 2. Create virtual Environment for python
 ```bash
 python3 -m venv env
+source /env/bin/activate
+```
 
+### 3.Run the project on localserver
+```bash
+pip install -r requirements.txt
+python3 manage.py migrate
+python3 manage.py migrations
+python3 manage.py runserver

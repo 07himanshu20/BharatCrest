@@ -1,4 +1,4 @@
-# GSG InfoSystem
+ # GSG InfoSystem
 
 A Django-based web project.
 

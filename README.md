@@ -8,8 +8,8 @@ A Django-web based Project
 
 ### 1. clone the repo 
 ```bash 
-git clone https://github.com/07himanshu20/GSG-InfoSystem-.git
-cd GSG-InfoSystem- 
+git clone https://github.com/07himanshu20/GSG-InfoSystem-Portfolio.git
+cd GSG-InfoSystem-Portfolio 
 ```
 
 ### 2. Create virtual Environment for python

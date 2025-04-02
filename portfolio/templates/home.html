@@ -233,48 +233,93 @@
     <h2 class="text-center mb-5 tt">Our Clients</h2>
     
     <!-- Bootstrap Carousel for Client Names Slider -->
-    <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row text-center justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <a href="#"><img src="{% static 'images/solution.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 d-none d-lg-block">
-                        <a href="#"><img src="{% static 'images/optimaxin.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <a href="#"><img src="{% static 'images/truerealtor.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
-                    </div>
+    <!-- Bootstrap Carousel for Client Names Slider -->
+<!-- Bootstrap Carousel for Client Names Slider -->
+<!-- Bootstrap Carousel for Client Names Slider -->
+<!-- Bootstrap Carousel for Client Names Slider -->
+<div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-inner">
+        <!-- Slide 1 - First Client (shown on all screens) -->
+        <div class="carousel-item active">
+            <div class="row text-center justify-content-center">
+                <div class="col-12 col-lg-4">
+                    <a href="#"><img src="{% static 'images/solution.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
                 </div>
-            </div>
-    
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-                <div class="row text-center justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <a href="#"><img src="{% static 'images/finex.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 d-none d-lg-block">
-                        <a href="#"><img src="{% static 'images/branding.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <a href="#"><img src="{% static 'images/client6.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
-                    </div>
+                <!-- These only show on lg+ screens -->
+                <div class="col-lg-4 d-none d-lg-block">
+                    <a href="#"><img src="{% static 'images/optimaxin.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block">
+                    <a href="#"><img src="{% static 'images/truerealtor.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
                 </div>
             </div>
         </div>
-    
-        <!-- Carousel Controls -->
-        <a class="carousel-control-prev" href="#clientCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#clientCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
+
+        <!-- Slide 2 - Second Client (shown alone on mobile, with 2 others on desktop) -->
+        <div class="carousel-item">
+            <div class="row text-center justify-content-center">
+                <div class="col-12 col-lg-4">
+                    <a href="#"><img src="{% static 'images/finex.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                </div>
+                <!-- These only show on lg+ screens -->
+                <div class="col-lg-4 d-none d-lg-block">
+                    <a href="#"><img src="{% static 'images/branding.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block">
+                    <a href="#"><img src="{% static 'images/client6.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 - Third Client (mobile only needs this one) -->
+        <div class="carousel-item d-lg-none">
+            <div class="row text-center justify-content-center">
+                <div class="col-12">
+                    <a href="#"><img src="{% static 'images/optimaxin.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 - Fourth Client (mobile only) -->
+        <div class="carousel-item d-lg-none">
+            <div class="row text-center justify-content-center">
+                <div class="col-12">
+                    <a href="#"><img src="{% static 'images/truerealtor.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5 - Fifth Client (mobile only) -->
+        <div class="carousel-item d-lg-none">
+            <div class="row text-center justify-content-center">
+                <div class="col-12">
+                    <a href="#"><img src="{% static 'images/branding.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6 - Sixth Client (mobile only) -->
+        <div class="carousel-item d-lg-none">
+            <div class="row text-center justify-content-center">
+                <div class="col-12">
+                    <a href="#"><img src="{% static 'images/client6.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Carousel Controls -->
+    <a class="carousel-control-prev" href="#clientCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#clientCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+
     
 </section>
 

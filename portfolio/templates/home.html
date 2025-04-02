@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >BharatCrest</title>
+    <title >Our Professional Portfolio</title>
     <!-- Adding Bootstrap CSS -->
 
     {% load static %}
@@ -42,11 +42,11 @@
             <div class="col-lg-7 col-md-5 col-sm-8 text-center d-flex flex-column justify-content-center">
                 <div>
                     <!-- Row 1: Heading -->
-                    <h1 class="tt">BharatCrest</h1>
+                    <h1 class="tt">OUR PROFESSIONAL PORTFOLIO</h1>
                 </div>
                 <div>
                     <!-- Row 2: Description -->
-                    <p class="description" style="color: white;">Driving Digital Transformation Through Cutting-Edge Software Innovation</p>
+                    <p class="description" style="color: white;">Welcome to our platform, your trusted partner in software innovation.</p>
                 </div>
             </div>
 
@@ -75,7 +75,7 @@
                                         <a class="nav-link" href="#">Home</a>
                                     </li>
                                     <li class="nav-item mx-2">
-                                        <a class="nav-link" href="#team">About US </a>
+                                        <a class="nav-link" href="#team">About</a>
                                     </li>
                                     
                                     <li class="nav-item mx-2">
@@ -239,70 +239,38 @@
 <!-- Bootstrap Carousel for Client Names Slider -->
 <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
     <div class="carousel-inner">
-        <!-- Slide 1 - First Client (shown on all screens) -->
+        <!-- Slide 1 -->
         <div class="carousel-item active">
             <div class="row text-center justify-content-center">
-                <div class="col-12 col-lg-4">
+                <div class="col-lg-4 md-6 sm-6">
                     <a href="#"><img src="{% static 'images/solution.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                    <p>Solution Center</p>
                 </div>
-                <!-- These only show on lg+ screens -->
-                <div class="col-lg-4 d-none d-lg-block">
+                <div class="col-lg-4 md-6 sm-6">
                     <a href="#"><img src="{% static 'images/optimaxin.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                    <p>Optimaxin</p>
                 </div>
-                <div class="col-lg-4 d-none d-lg-block">
+                <div class="col-lg-4 md-6 sm-6">
                     <a href="#"><img src="{% static 'images/truerealtor.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                    <p>True Realtor</p>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 2 - Second Client (shown alone on mobile, with 2 others on desktop) -->
+        <!-- Slide 2 -->
         <div class="carousel-item">
             <div class="row text-center justify-content-center">
-                <div class="col-12 col-lg-4">
+                <div class="col-lg-4 md-6 sm-6">
                     <a href="#"><img src="{% static 'images/finex.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                    <p>Finex</p>
                 </div>
-                <!-- These only show on lg+ screens -->
-                <div class="col-lg-4 d-none d-lg-block">
+                <div class="col-lg-4 md-6 sm-6">
                     <a href="#"><img src="{% static 'images/branding.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                    <p>Branding</p>
                 </div>
-                <div class="col-lg-4 d-none d-lg-block">
-                    <a href="#"><img src="{% static 'images/client6.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 3 - Third Client (mobile only needs this one) -->
-        <div class="carousel-item d-lg-none">
-            <div class="row text-center justify-content-center">
-                <div class="col-12">
-                    <a href="#"><img src="{% static 'images/optimaxin.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 4 - Fourth Client (mobile only) -->
-        <div class="carousel-item d-lg-none">
-            <div class="row text-center justify-content-center">
-                <div class="col-12">
-                    <a href="#"><img src="{% static 'images/truerealtor.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 5 - Fifth Client (mobile only) -->
-        <div class="carousel-item d-lg-none">
-            <div class="row text-center justify-content-center">
-                <div class="col-12">
-                    <a href="#"><img src="{% static 'images/branding.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 6 - Sixth Client (mobile only) -->
-        <div class="carousel-item d-lg-none">
-            <div class="row text-center justify-content-center">
-                <div class="col-12">
-                    <a href="#"><img src="{% static 'images/client6.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                <div class="col-lg-4 md-6 sm-6">
+                    <a href="#"><img src="{% static 'images/house.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
+                    <p>HouseMonk</p>
                 </div>
             </div>
         </div>
@@ -318,7 +286,6 @@
         <span class="visually-hidden">Next</span>
     </a>
 </div>
-
 
     
 </section>
@@ -401,22 +368,25 @@
 <!-- Custom JS for form handling -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const targetId = "{{ target_id }}";
-        if (targetId) {
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: "smooth" });
+        var myCarousel = document.querySelector("#clientCarousel");
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 2000,  // Auto-slide every 2 seconds
+            pause: "hover",  // Pause on hover
+            wrap: true       // Allow infinite looping
+        });
 
-                targetElement.style.setProperty("--flash-color", "coral");
-                // Add the flash class to apply the animation
-                targetElement.classList.add("flash");
-                
-                // Remove the class after the animation ends
-                setTimeout(() => {
-                    targetElement.classList.remove("flash");
-                }, 2000); // Match the animation duration in CSS
+        // Restart autoplay when the mouse leaves
+        myCarousel.addEventListener("mouseleave", function () {
+            carousel.cycle();
+        });
+
+        // Ensure active slide has a valid image
+        myCarousel.addEventListener("slid.bs.carousel", function () {
+            var activeSlide = document.querySelector("#clientCarousel .carousel-item.active");
+            if (!activeSlide) {
+                carousel.next();  // Go to the next slide if the active one disappears
             }
-        }
+        });
     });
 </script>
 

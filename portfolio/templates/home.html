@@ -236,42 +236,46 @@
     <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="row text-center">
+                <div class="row text-center justify-content-center">
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <a href="#"><img src="{% static 'images/solution.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200" style="margin-left: 12%;"></a>
+                        <a href="#"><img src="{% static 'images/solution.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 d-none d-lg-block">
                         <a href="#"><img src="{% static 'images/optimaxin.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 d-none d-lg-block">
                         <a href="#"><img src="{% static 'images/truerealtor.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
                     </div>
                 </div>
             </div>
+    
+            <!-- Slide 2 -->
             <div class="carousel-item">
-                <div class="row text-center">
+                <div class="row text-center justify-content-center">
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <a href="#"><img src="{% static 'images/finex.jpg' %}" class="mb-3 custom-image" width="200" height="100"></a>
+                        <a href="#"><img src="{% static 'images/finex.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <a href="#"> <img src="{% static 'images/branding.jpg' %}" class="mb-3 custom-image" width="200" height="200"></a>
+                    <div class="col-lg-4 col-md-6 d-none d-lg-block">
+                        <a href="#"><img src="{% static 'images/branding.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <h5>Client 6</h5>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <a href="#"><img src="{% static 'images/client6.jpg' %}" class="rounded-circle mb-3 custom-image" width="200" height="200"></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Controls -->
-        <button class="carousel-control-prev custom-control" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+    
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" href="#clientCarousel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next custom-control" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+        </a>
+        <a class="carousel-control-next" href="#clientCarousel" role="button" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+        </a>
     </div>
+    
 </section>
 
 

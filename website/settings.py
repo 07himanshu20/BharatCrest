@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-1_t%$n+8+@p^s2+em&mz7)hoyv-#ban5-c^b@10a-gjy9kmb&q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["bharatcrest.com", "www.bharatcrest.com"]
 
 
 # Application definition
@@ -136,4 +136,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'C:/users/website/portfolio/staticfiles')
 '''
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR / 'portfolio/static'),  # Adjust based on where your static files are
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://bharatcrest.com",
+    "https://www.bharatcrest.com"
 ]

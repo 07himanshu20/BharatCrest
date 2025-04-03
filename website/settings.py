@@ -137,3 +137,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'C:/users/website/portfolio/staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR / 'portfolio/static'),  # Adjust based on where your static files are
 ]
+CSRF_TRUSTED_ORIGINS = [
+    "https://bharatcrest.com",
+    "https://www.bharatcrest.com"
+]

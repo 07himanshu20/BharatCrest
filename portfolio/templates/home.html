@@ -367,6 +367,25 @@
 <!-- Adding Bootstrap JS -->
 <!-- Custom JS for form handling -->
 <script>
+
+     document.addEventListener("DOMContentLoaded", function () {
+        const targetId = "{{ target_id }}";
+        if (targetId) {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+
+                targetElement.style.setProperty("--flash-color", "coral");
+                // Add the flash class to apply the animation
+                targetElement.classList.add("flash");
+                
+                // Remove the class after the animation ends
+                setTimeout(() => {
+                    targetElement.classList.remove("flash");
+                }, 2000); // Match the animation duration in CSS
+            }
+        }
+    });
     document.addEventListener("DOMContentLoaded", function () {
         var myCarousel = document.querySelector("#clientCarousel");
         var carousel = new bootstrap.Carousel(myCarousel, {
